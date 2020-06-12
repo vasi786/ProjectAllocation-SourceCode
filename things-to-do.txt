@@ -1,3 +1,3 @@
 1.  Need to figure out what data we need to take for accomplishing the project. Data in the sense, like name, GPA, etc.etc.
 
-2.  
+2.  Also whether we should take this data again in the form of google sheets or should we make an application for that too. 
