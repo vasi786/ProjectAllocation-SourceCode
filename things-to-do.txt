@@ -2,4 +2,5 @@
 
 2.  And we should also send something to prof's, they will enter there recommendations there, if not they will just ignore. If we don't see any recommendations, that means that prof doesn't have any favour to a particular student.
 
+3. This is for video.
 
