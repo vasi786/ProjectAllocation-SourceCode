@@ -32,14 +32,22 @@ for j = 2:total_choices
         end
         
     end
+    
     if strlength(txt(2,j)) > 20
-        msg = sprintf('It is observed that the professor name is misspelled or used a surname insted of last name')
-        resolution = sprintf( 'go to choice no: %f and enter the correct name',choic_no+1)
+        Message = sprintf('It is observed that the professor name is misspelled or used a surname instead of last name')
+        Fix = sprintf( 'go to choice no: %f and check for the correct/actual name',choic_no+1)
+        Example = sprintf('If the name is prof A.PR. Thorne, then consider Thorne')
         prompt{1} = ('Enter the correct name of the professor');
-        name = 'Updated Professor Name';
-        new_name=(inputdlg(prompt{1},name, [1 30]));
+        prompt{2} = ('Specify the row number of that professor in the prof_list-keywords.xlsx file');
+        name1 = 'Updated Professor Name';
+        name2 = 'Row Number';
+        new_name=(inputdlg(prompt{1},name1, [1 50]));
+        Row_num=(inputdlg(prompt{2},name2, [1 50]));
+        location = char(append('B',Row_num));
+        xlswrite('prof_list-keywords.xlsx',new_name,1,location)
         error('Error in Professor name')
     end
+    
     clear k
     clear repeated
     
