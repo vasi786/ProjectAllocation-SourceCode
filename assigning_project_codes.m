@@ -13,7 +13,8 @@ txt2 = txt2(2:end,end);
 [N_students,total_choices] = size(txt);
 
 
-for i = 2: N_students   % First column is titles
+%for i = 2: N_students   % First column is titles
+i = 2;
     for j = 2:total_choices
         %txt_char(i,j) = {char(txt(i,j));}
         for k = 1:length(txt2)
