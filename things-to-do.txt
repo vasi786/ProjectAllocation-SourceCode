@@ -1,7 +1,6 @@
 1.  Need to figure out what data we need to take for accomplishing the project. Data in the sense, like name, GPA, etc.etc.
 
-2.  Also whether we should take this data again in the form of google sheets or should we make an application for that too. 
+2.  And we should also send something to prof's, they will enter there recommendations there, if not they will just ignore. If we don't see any recommendations, that means that prof doesn't have any favour to a particular student.
 
-3.  And we should also send something to prof's, they will enter there recommendations there, if not they will just ignore. If we don't see any recommendations, that means that prof doesn't have any favour to a particular student.
+3. 
 
-4. 
