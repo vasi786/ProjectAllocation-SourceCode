@@ -15,6 +15,7 @@ clear k;
 %Need to write every thing in generic form. I am writing for this
 %particular example  taken care of just 10 students
 proj = 'proj';
+
 txt = [txt(:,2) txt(:,5:end)];
 txt = erase(txt,match);
 txt2 = txt2(2:end,end);
@@ -57,7 +58,7 @@ for j = 2:total_choices % first column is titles
         Row_num=(inputdlg(prompt{2},name2, [1 50]));
         location = char(append('B',Row_num));
         xlswrite('prof_list-keywords.xlsx',new_name,1,location)
-        error('Error in Professor name')
+        error('Error in Professor name and excel sheet updated as per your need,try running the prog again')
     end
     m = m+1;
 end
