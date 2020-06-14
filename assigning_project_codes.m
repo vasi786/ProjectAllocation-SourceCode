@@ -1,8 +1,8 @@
-function [rollNum,txt,txt3] = assigning_project_codes(filename1,filename2)
+function [Roll_nos_choices,txt,txt3] = assigning_project_codes(filename1,filename2)
 tic
 [num,txt] = xlsread(filename1);
 [num2,txt2] = xlsread(filename2);
-rollNum = num(:,3) % Roll numbers
+Roll_nos_choices = num(:,3) % Roll numbers
 %% To be erased
 match = (1:length(txt)) + ". ";
 match2 = (1:length(txt)) + " ";
