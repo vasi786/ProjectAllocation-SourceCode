@@ -1,15 +1,12 @@
-clc;clear
+function [Roll_nos_choices,txt,txt3] = assigning_project_codes(filename1,filename2)
 tic
-[num,txt] = xlsread('students-choices.xlsx');
-%txt = string(txt);
-
-[num2,txt2] = xlsread('prof_list-keywords.xlsx');
-
+[num,txt] = xlsread(filename1);
+[num2,txt2] = xlsread(filename2);
+Roll_nos_choices = num(:,3) % Roll numbers
 %% To be erased
-dotspace = '. ';
-for k = 1:length(txt)
-    match{k} = [num2str(k,'%d') dotspace];
-end
+match = (1:length(txt)) + ". ";
+match2 = (1:length(txt)) + " ";
+match3 = (1:length(txt)) + ".";
 clear k;
 %%
 %Need to write every thing in generic form. I am writing for this
@@ -18,6 +15,8 @@ proj = 'proj';
 
 txt = [txt(:,2) txt(:,5:end)];
 txt = erase(txt,match);
+txt = erase(txt,match2);
+txt = erase(txt,match3);
 txt2 = txt2(2:end,end);
 [N_students,total_choices] = size(txt);
 clc
@@ -34,18 +33,19 @@ for j = 2:total_choices % first column is titles
         if result(k) == 1
             storing(j) = k;
             repeated = cellstr(num2str((sum(storing(:)== k))));
-            append(txt2(k),proj,repeated)
+            append_sub = {char(txt2(k)+"proj"+repeated)};% If append doesn't work for our version
+            %append(txt2(k),proj,repeated)
             choic_no = j - 1;
             txt3{m,1} = char(txt(i,j));
-            txt3{m,2} = char(append(txt2(k),proj,repeated));
-            txt(i,j) = append(txt2(k),proj,repeated);
+%             txt3{m,2} = char(append(txt2(k),proj,repeated));
+            txt3{m,2} = char(append_sub);% If append doesn't work for our version
+            %txt(i,j) = append(txt2(k),proj,repeated);
+            txt(i,j) = append_sub; % If append doesn't work for our version
             break
         end
     end
     
-    if i ==2
-        
-    elseif strlength(txt(i,j)) > 20
+    if strlength(txt(i,j)) > 20
         Message = sprintf('It is observed that the professor name is misspelled or used a surname \ninstead of last name')
         project_name = string(txt(2,j));
         Fix = sprintf('The professor name and project is as follows: \n%s',project_name)
@@ -54,14 +54,15 @@ for j = 2:total_choices % first column is titles
         prompt{2} = ('Specify the row number of that professor in the prof_list-keywords.xlsx file');
         name1 = 'Updated Professor Name';
         name2 = 'Row Number';
-        new_name=(inputdlg(prompt{1},name1, [1 50]));
-        Row_num=(inputdlg(prompt{2},name2, [1 50]));
-        location = char(append('B',Row_num));
+        new_name =(inputdlg(prompt{1},name1, [1 50]));
+        Row_num =(inputdlg(prompt{2},name2, [1 50]));
+        location = char({char("B"+char(Row_num))}) %append('B',Row_num));
         xlswrite('prof_list-keywords.xlsx',new_name,1,location)
         error('Error in Professor name and excel sheet updated as per your need,try running the prog again')
     end
     m = m+1;
 end
+
 clear k
 clear repeated
 clear result
@@ -69,8 +70,6 @@ clear storing
 clear repeated
 clear choic_no
 clc
-
-
 
 
 for i = 3:N_students
@@ -88,17 +87,5 @@ for i = 3:N_students
     end
 end
 
-
-
-
-
-
-
-
-
-
-
-
-
-%end
 toc
+end
