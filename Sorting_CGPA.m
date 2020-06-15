@@ -1,4 +1,5 @@
 clc;
+function [sorted_details,sort_index,sorted_Roll_nos,sorted_CGPA] = Sorting_CGPA(num_sort,txt_sort)
 
 %#################### Sorting CGPA and Roll no's accordingly##############
 
@@ -68,4 +69,4 @@ format longG
 
 sorted_details = [sort_index sorted_Roll_nos sorted_CGPA];
 %########################################################################
-
+end
