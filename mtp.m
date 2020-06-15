@@ -1,6 +1,20 @@
  clc;
 % filename1 = 'students-choices';
 % filename2 = 'prof_list-keywords.xlsx';
+f = msgbox('please upload the excel file that containes student choices')
+[file1,filepath1] = uigetfile('Select the Excel file');
+filename1 = fullfile(filepath1, file1);
+[num,txt] = xlsread(filename1);
+
+f = msgbox('please upload the excel file that containes proffesor list keywords')
+[file2,filepath2] = uigetfile('Select the Excel file');
+filename2 = fullfile(filepath2, file1);
+[num2,txt2] = xlsread(filename2);
+
+f = msgbox('please upload the excel file that containes name and roll no')
+[file,filepath] = uigetfile('Select the Excel file');
+filename = fullfile(filepath, file);
+[num_sort,txt_sort] = xlsread(filename);
 
 for i = 1: length(Roll_nos_choices)
     if Roll_nos_choices(i) == Roll_nos_CGPA(i)
@@ -33,17 +47,6 @@ for i = 1: N_students-1
     
 end
 
-[file1,filepath1] = uigetfile('Select the Excel file');
-filename1 = fullfile(filepath1, file1);
-[num,txt] = xlsread(filename1); 
 
-[file2,filepath2] = uigetfile('Select the Excel file');
-filename2 = fullfile(filepath2, file1);
-[num2,txt2] = xlsread(filename2);
-
-f = msgbox('please upload the excel file that containes name and roll no')
-[file,filepath] = uigetfile('Select the Excel file');
-filename = fullfile(filepath, file);
-[num_sort,txt_sort] = xlsread(filename);
 
 [original_proj_list txt3(:,2)]
