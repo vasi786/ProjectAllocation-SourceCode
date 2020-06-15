@@ -1,10 +1,10 @@
-clc;clear
+clc;
 
 %#################### Sorting CGPA and Roll no's accordingly##############
 
-[num,txt] = xlsread('Name_CPI');  % importing the file
+[num_sort,txt_sort] = xlsread('name_CGPA_2');  % importing the file
 
-txt_headers = string(txt(1,:));   % First row contains headings
+txt_headers = string(txt_sort(1,:));   % First row contains headings
 
 button = 'NAME'
 button_2 = 'CGPA'
@@ -24,15 +24,48 @@ for i = 1: length(txt_headers)
     end
 end
 
-CGPA = str2double((txt(2:end,CGPA_column)));
+CGPA = num_sort(:,CGPA_column);
 
 [sorted_CGPA,sort_index] = sort(CGPA,'descend');
 
-Roll_nos = str2double((txt(2:end,Roll_no_column)));
 
-sorted_Roll_nos = Roll_nos(sort_index,:);
+%%%%%%%%%%%%%%%%%%%%%% adding seperate column to differentiate same CGPA %%
+a = sorted_CGPA;
+[ii,jj,kk]=unique(a);
+repeated=ii(histc(kk,1:numel(ii))>1);
+
+
+k = 1;
+
+while true
+    for i = 1: length(a)
+        for j = i:length(a)
+            if repeated(k) == a(j)
+                a(j,2) = k;
+            end
+            
+        end
+    end
+    k = k + 1;
+    
+    if k > length(repeated)
+        break
+    end
+end
+
+clear k 
+clear repeated
+clear i 
+clear j
+
+sorted_CGPA = a;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Roll_nos_CGPA = num_sort(:,Roll_no_column);
+
+sorted_Roll_nos = Roll_nos_CGPA(sort_index,:);
 format longG
 
-sorted_details = [sorted_Roll_nos sorted_CGPA]
+sorted_details = [sort_index sorted_Roll_nos sorted_CGPA];
 %########################################################################
 
