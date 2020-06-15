@@ -1,4 +1,4 @@
-function [Roll_nos_choices,txt,txt3] = assigning_project_codes(filename1,filename2)
+function [Roll_nos_choices,txt,txt3] = assigning_project_codes(num,txt,num2,txt2)
 tic
 [num,txt] = xlsread(filename1);
 [num2,txt2] = xlsread(filename2);
