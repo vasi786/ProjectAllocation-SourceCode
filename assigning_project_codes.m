@@ -2,7 +2,17 @@ function [Roll_nos_choices,txt,txt3] = assigning_project_codes(filename1,filenam
 tic
 [num,txt] = xlsread(filename1);
 [num2,txt2] = xlsread(filename2);
-Roll_nos_choices = num(:,3) % Roll numbers
+txt_headers = string(txt(1,:));   % First row contains headings
+button = 'Roll No'
+
+for i = 1: length(txt_headers)
+    if strcmpi(txt_headers(i),button)
+      % disp(['The Roll no column is : (', num2str(i),')'])
+        Roll_no_column = i;
+    end
+end
+
+Roll_nos_choices = num(:,Roll_no_column) % Roll numbers
 %% To be erased
 match = (1:length(txt)) + ". ";
 match2 = (1:length(txt)) + " ";
