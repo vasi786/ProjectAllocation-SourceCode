@@ -23,8 +23,11 @@ filename = fullfile(filepath, file);
 [file3,filepath3] = uigetfile({'*.*','Select the Excel file (.xlsx)'},...
     'please upload the excel file which student gate scores');
 filename3 = fullfile(filepath3, file3);
-[num3,txt3] = xlsread(filename1);
+[nu,tx] = xlsread(filename3);
 
+function1 = @assigning_project_codes     %  projectcodes = assigning_project_codes(num,txt,num2,txt2);
+function2 = @Sorting_CGPA                %  SortedCGPA = Sorting_CGPA(num_sort,txt_sort);
+function3 = @GateScore_decision          %  Gatedecision = GateScore_decision(nu,tx);
 
 for i = 1: length(Roll_nos_choices)
     if Roll_nos_choices(i) == Roll_nos_CGPA(i)
