@@ -1,6 +1,6 @@
-function [winner] = GateScore_decision(clashed_labels)
+function [winner] = GateScore_decision(nu,tx)
 % read Gatescore excel file
-[nu,tx] = xlsread('GATE_Score');
+
 D = zeros(length(tx),1);
 % converting Gatescore from the char to numeric
 for i=1:length(tx)
