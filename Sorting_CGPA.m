@@ -35,7 +35,7 @@ a = sorted_CGPA;
 [ii,jj,kk]=unique(a);
 repeated=ii(histc(kk,1:numel(ii))>1);
 
-
+repeated = sort(repeated,'descend');
 k = 1;
 
 while true
@@ -59,7 +59,7 @@ clear repeated
 clear i 
 clear j
 
-sorted_CGPA = a;
+sorted_CGPA = a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Roll_nos_CGPA = num_sort(:,Roll_no_column);
@@ -67,8 +67,11 @@ Roll_nos_CGPA = num_sort(:,Roll_no_column);
 sorted_Roll_nos = Roll_nos_CGPA(sort_index,:);
 format longG
 
-IA = [sorted_Roll_nos (1:length(sorted_Roll_nos))']; % IA is for index assignment (input for a getindex function file)
+IA = [sorted_Roll_nos (1:length(sorted_Roll_nos))']; % IA is for index assignment 
 
 sorted_details = [sort_index sorted_Roll_nos sorted_CGPA];
 %########################################################################
-end
+
+
+
+
