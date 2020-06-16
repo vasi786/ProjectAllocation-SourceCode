@@ -67,6 +67,8 @@ Roll_nos_CGPA = num_sort(:,Roll_no_column);
 sorted_Roll_nos = Roll_nos_CGPA(sort_index,:);
 format longG
 
+IA = [sorted_Roll_nos (1:length(sorted_Roll_nos))']; % IA is for index assignment (input for a getindex function file)
+
 sorted_details = [sort_index sorted_Roll_nos sorted_CGPA];
 %########################################################################
 end
