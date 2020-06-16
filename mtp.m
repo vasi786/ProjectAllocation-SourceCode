@@ -1,6 +1,7 @@
  clc;
 % filename1 = 'students-choices';
 % filename2 = 'prof_list-keywords.xlsx';
+% filename3 = 'student gate scroes'
 
 [file1,filepath1] = uigetfile({'*.*','Select the Excel file (.xlsx)'},...
     'please upload the excel file which contains student choices');
@@ -18,6 +19,11 @@ filename2 = fullfile(filepath2, file1);
     'please upload the excel file that containes name and roll no');
 filename = fullfile(filepath, file);
 [num_sort,txt_sort] = xlsread(filename);
+
+[file3,filepath3] = uigetfile({'*.*','Select the Excel file (.xlsx)'},...
+    'please upload the excel file which student gate scores');
+filename3 = fullfile(filepath3, file3);
+[num3,txt3] = xlsread(filename1);
 
 
 for i = 1: length(Roll_nos_choices)
