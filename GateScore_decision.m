@@ -1,4 +1,4 @@
-function [winner] = GateScore_decision(nu,tx)
+function [winner] = GateScore_decision(nu,tx,clashed_labels)
 % read Gatescore excel file
 
 D = zeros(length(tx),1);
