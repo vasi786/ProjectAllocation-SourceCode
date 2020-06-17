@@ -21,7 +21,7 @@ filename = fullfile(filepath, file);
 [num_sort,txt_sort] = xlsread(filename);
 
 [file3,filepath3] = uigetfile({'*.*','Select the Excel file (.xlsx)'},...
-    'please upload the excel file which student gate scores');
+    'please upload the student Gate scores excel file');
 filename3 = fullfile(filepath3, file3);
 [nu,tx] = xlsread(filename3);
 
