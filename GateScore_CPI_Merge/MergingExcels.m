@@ -3,7 +3,7 @@ clc; clear all;
 CPI = readtable('CPI.xlsx', 'Range' , 'A:C');
 GateScore = readtable('GATE_Score.xlsx','Range','B:C');
 
-T = cell2table(cell(69,1))
+T = cell2table(cell(69,1));
 
 for i = 1:height(CPI)
     A = string(CPI{i,2});
