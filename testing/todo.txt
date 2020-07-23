@@ -1,5 +1,0 @@
-2020-07-02 download the results
-2020-07-02 get the results
-2020-07-03 vertical production run
-2020-07-03 horizontal production run
-2020-07-21 check the gaussian results
