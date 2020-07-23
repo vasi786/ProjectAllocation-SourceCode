@@ -15,4 +15,7 @@ for i = 1:height(CPI)
     end
 end
 
-MergedList = [CPI T];
+Merged = [CPI T];
+Merged.CPI = [];
+Merged.ApplicantName = [];
+%RollNo_GateScore = removevars(MergedLista,{'ApplicantName','CPI'})
