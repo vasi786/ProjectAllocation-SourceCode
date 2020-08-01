@@ -3,3 +3,5 @@
 
 APP Preview
 
+![](Images/particular_choices.png)
+
