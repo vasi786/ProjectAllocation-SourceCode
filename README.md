@@ -7,11 +7,12 @@ This app also takes care of personal choices by a professor over a student. Init
 Another Interesting feature in the app is that the user can initially specify maximum number of projects that can be alloted under a specific professor. This way all the professors will have a fair chance of getting a project allocated. By specifying this the code behind the app ensures the allocation satisying the user needs.
 
 
+# APP Preview
 
 
 ![](Images/Project%20Allocation.png)
 
-APP Preview
+# Specific choices
 
 ![](Images/particular_choices.png)
 
