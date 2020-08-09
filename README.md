@@ -15,5 +15,5 @@ Another Interesting feature in the app is that the user can initially specify ma
 
 # Specific choices
 
-![](Images/particular_choices.png)
+![](https://github.com/vasi786/ProjectAllocation-SourceCode/blob/master/Images/projectallocation.png)
 
