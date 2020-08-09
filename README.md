@@ -11,9 +11,9 @@ Another Interesting feature in the app is that the user can initially specify ma
 
 
 
-![](vasi786/ProjectAllocation-SourceCode/tree/master/Images/Project%20Allocation.png)
+![](Images/Project%20Allocation.png)
 
 # Specific choices
 
-![](vasi786/ProjectAllocation-SourceCode/tree/master/Images/particular_choices.png)
+![](Images/particular_choices.png)
 
