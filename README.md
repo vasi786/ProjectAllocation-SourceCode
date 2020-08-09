@@ -10,9 +10,10 @@ Another Interesting feature in the app is that the user can initially specify ma
 # APP Preview
 
 
-![](Images/Project%20Allocation.png)
+
+![](vasi786/ProjectAllocation-SourceCode/tree/master/Images/Project%20Allocation.png)
 
 # Specific choices
 
-![](Images/particular_choices.png)
+![](vasi786/ProjectAllocation-SourceCode/tree/master/Images/particular_choices.png)
 
