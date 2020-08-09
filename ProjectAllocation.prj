@@ -1,0 +1,145 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3537602153" file="C:\Users\HP\Desktop\trail2\testing\Further_modif\final_test\Final\ProjectAllocation.prj" location="C:\Users\HP\Desktop\trail2\testing\Further_modif\final_test\Final" name="ProjectAllocation" preferred-package-location="C:\Users\HP\Desktop\trail2\testing\Further_modif\final_test\Final\ProjectAllocation\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>ProjectAllocation</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Vasista Adupa</param.authnamewatermark>
+    <param.email>adupa@iitg.ac.in</param.email>
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\ProjectAllocation\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\ProjectAllocation\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\ProjectAllocation\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\ProjectAllocation\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\ProjectAllocation</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>true</param.create.log>
+    <param.log.file>log</param.log.file>
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\Main.mlapp</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\252_Double_Play_next_smooth_outline.gif</file>
+      <file>${PROJECT_ROOT}\425_exclamation_mark_bubble_outline.gif</file>
+      <file>${PROJECT_ROOT}\assigning_project_codes.m</file>
+      <file>${PROJECT_ROOT}\assignment.m</file>
+      <file>${PROJECT_ROOT}\circles-menu-7_200_transparent.gif</file>
+      <file>${PROJECT_ROOT}\condition1.m</file>
+      <file>${PROJECT_ROOT}\condition2.m</file>
+      <file>${PROJECT_ROOT}\condition3.m</file>
+      <file>${PROJECT_ROOT}\deleteaproj.m</file>
+      <file>${PROJECT_ROOT}\DeletingAProject.mlapp</file>
+      <file>${PROJECT_ROOT}\folder-with-file_200_transparent.gif</file>
+      <file>${PROJECT_ROOT}\gate_allocation.m</file>
+      <file>${PROJECT_ROOT}\gate_allocation_2.m</file>
+      <file>${PROJECT_ROOT}\GateScore_decision.m</file>
+      <file>${PROJECT_ROOT}\getindex.m</file>
+      <file>${PROJECT_ROOT}\getprojname.m</file>
+      <file>${PROJECT_ROOT}\gui_table.mlapp</file>
+      <file>${PROJECT_ROOT}\iitg.png</file>
+      <file>${PROJECT_ROOT}\manual_selection.m</file>
+      <file>${PROJECT_ROOT}\manual_selection_2.m</file>
+      <file>${PROJECT_ROOT}\ManualProjectAllocation.m</file>
+      <file>${PROJECT_ROOT}\ManualProjectAllocation_2.m</file>
+      <file>${PROJECT_ROOT}\max_proj_checker_deleter.m</file>
+      <file>${PROJECT_ROOT}\MpPC_table.mlapp</file>
+      <file>${PROJECT_ROOT}\mtp.m</file>
+      <file>${PROJECT_ROOT}\number_of_projs_floated.m</file>
+      <file>${PROJECT_ROOT}\okk.gif</file>
+      <file>${PROJECT_ROOT}\prof_list-keywords.xlsx</file>
+      <file>${PROJECT_ROOT}\recommendations_fn.m</file>
+      <file>${PROJECT_ROOT}\removingproj.m</file>
+      <file>${PROJECT_ROOT}\same_CGPA.m</file>
+      <file>${PROJECT_ROOT}\Sorting_CGPA.m</file>
+      <file>${PROJECT_ROOT}\x_gui.mlapp</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\FinalAssignedStatus.xls</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\ProjectAllocation\for_testing" name="readme.txt" optional="true">C:\Users\HP\Desktop\trail2\testing\Further_modif\final_test\Final\ProjectAllocation\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\ProjectAllocation\for_testing" name="ProjectAllocation.exe" optional="false">C:\Users\HP\Desktop\trail2\testing\Further_modif\final_test\Final\ProjectAllocation\for_testing\ProjectAllocation.exe</file>
+      <file location="${PROJECT_ROOT}\ProjectAllocation\for_testing" name="splash.png" optional="false">C:\Users\HP\Desktop\trail2\testing\Further_modif\final_test\Final\ProjectAllocation\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020a</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
