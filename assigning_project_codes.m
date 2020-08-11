@@ -11,20 +11,21 @@ button_3 = 'roll no';
 
 for i = 1: length(txt_headers)
     if ~cellfun('isempty',regexpi(txt_headers(i),button))
-        disp(['The choice column is : (', num2str(i),')'])
+        disp(['The choices starts from column number ', num2str(i),''])
         choice_column = i;
         break
         
     elseif ~cellfun('isempty',regexpi(txt_headers(i),button_2))
-        disp(['The name column is : (', num2str(i),')'])
+        disp(['The student names are in the column ', num2str(i),''])
         name_column = i;
         
     elseif ~cellfun('isempty',regexpi(txt_headers(i),button_3))
-        disp(['The roll column is : (', num2str(i),')'])
+        disp(['The student roll column is ', num2str(i),''])
         roll_column = i;
     end
     
 end
+
 
 
 Roll_nos_choices = num(:,roll_column);

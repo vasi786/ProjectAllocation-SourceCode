@@ -179,7 +179,7 @@ if length(index) > 2
             
             
             
-            if sum(ismember(previous_diff_index,diff_index(i))) == 0  
+            if sum(ismember(previous_diff_index,diff_index_1)) == 0  
                 
                 
                 previous_diff_index = [previous_diff_index;diff_index_1];                

@@ -1,8 +1,9 @@
 function [winner,I] = GateScore_decision(clashed_Roll_nos)  % nu variable contains only rolls and Gate score
 % read Gatescore excel file
 
-[nu,tx] = importdata('Student details.csv');
-nu = nu.data;
+%[nu,tx] = importdata('Student details.csv');
+nu = getappdata(0,"nu");
+%nu = nu.data;
 
 for i = 1: length(clashed_Roll_nos)
     

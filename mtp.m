@@ -148,7 +148,7 @@ while true
     [sorted_txt,~,tracking_max_projs,~,~] =...
         max_proj_checker_deleter (Assigned_proj_roll_with_gui,max_proj_checker,N_students,sorted_txt,proj_sent_no,BeforeOrAfter);
     
-    tracking_max_projs
+    tracking_max_projs;
     Assigned_proj_roll_with_gui
     if Student_no > N_students
         break
@@ -174,7 +174,15 @@ tracking_max_projs = tracking_max_projs(idx,:);
 
 [N_students] = size(Assigned_proj_roll_with_gui,1);
 
-Assigned_proj_roll_with_gui
+original_max_proj_checker = max_proj_checker;
+max_proj_checker(:,2) = "NoneAssigned";
+
+for i = 1:length(tracking_max_projs)
+   found_index =  find(strcmpi(tracking_max_projs(i,1),max_proj_checker));
+   max_proj_checker(found_index,2) = tracking_max_projs(i,2);
+end
+ tracking_max_projs = max_proj_checker
+max_proj_checker = original_max_proj_checker;
 
 Assigned_proj_info = Assigned_proj_roll_with_gui(:,1);
 
@@ -183,12 +191,13 @@ for a  = 1 : N_students
     fullprojs(a) = original_proj_list(full_proj_index,1);
 end
 
-Assigned_proj_roll_with_gui(:,1) = fullprojs;
+Assigned_proj_roll_with_gui(:,1) = fullprojs
 
 final_assignment = Assigned_proj_roll_with_gui;
 %xlswrite('final_allotment',final_assignment)
 %writematrix(final_assignment,'final_assignment_prabir_kumar_reco.csv')
-xlswrite('final_assignment.xlsx',final_assignment);
+xlswrite('final_assignment.xlsx',final_assignment); % this should be
+%uncommented
 toc
 
 
