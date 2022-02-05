@@ -19,6 +19,9 @@ Another Interesting feature in the app is that the user can initially specify ma
 
 ![](https://github.com/vasi786/ProjectAllocation-SourceCode/blob/master/Images/projectallocation.png)
 
+# Algorithm
+![](https://github.com/vasi786/ProjectAllocation-SourceCode/blob/master/Images/outputname2-1.png)
+
 # Developers
 1. Vasista Adupa
 2. Aishwarya Srinivasan
