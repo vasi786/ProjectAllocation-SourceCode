@@ -1,6 +1,6 @@
 # Project-Allocation
 
-Project-Allocation is an Self Allocation app, where user needs to provide student choices of the projects and the criteria on which the allotment should be done. This is intentionally developed for Master's students, where the criteria on which the allocation takes place is CGPA. The Graduate Aptitude Test in Engineering (GATE) score can also be taken as a criteria if there is a match in CGPA. However, the GATE score criteria based allocation is not mandatory. 
+Project-Allocation is an Self Allocation app, where user needs to provide student choices of the projects and the criteria on which the allotment should be done. This is intentionally developed for master's and batchelor students, where the criteria on which the allocation takes place is CGPA. The Graduate Aptitude Test in Engineering (GATE) score can also be taken as a criteria if there is a match in CGPA. However, the GATE score criteria based allocation is not mandatory. 
 
 User always has the choice to allocate the project to a student manually.
 
