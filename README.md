@@ -23,7 +23,7 @@ Another Interesting feature in the app is that the user can initially specify ma
 ![](https://github.com/vasi786/ProjectAllocation-SourceCode/blob/master/Images/outputname2-1.png)
 
 # Developers
-1. Vasista Adupa
+1. Vasista Adupa, Contact - v.adupa@rug.nl
 2. Aishwarya Srinivasan
 3. Dileep Kumar Seera
 4. Venu Angirekula
